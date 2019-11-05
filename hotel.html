@@ -11,55 +11,101 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="formulario-biblio">
      <header class="header">
          <div class="btn btn-header">
              <a href="index.html">Volver</a>
          </div>
-         <h1 class="centrar-texto encabezado">Registra usuario</h1>
+         
      </header>
 
-    <main class="container main-votos">
-        
+     <main class="container main-biblio">
 
-        <div class="contenedor-votos">
+        <h1 class="centrar-texto encabezado-biblio">Registrar huesped</h1>
 
-            <div class="campo-voto">
-                <div class="imagen-candidato">
-                    <img src="" alt="Candidato-1">
-                </div>
-                <div class="info-candidato">
-                    <h2>Nombre candidato</h2>
-                </div>
-            </div>
+        <form action="" class="form-biblio">
 
-            <div class="campo-voto">
-                <div class="imagen-candidato">
-                    <img src="" alt="Candidato-2">
+            <fieldset>
+                <legend>datos del usuario</legend>
+                <div class="divicion-biblio">
+                    <div class="campo-biblio">
+                        <label for="category">Tipo de identificacion</label>
+                        <select name="categoria" id="category">
+                            <option value="" disabled selected>--Selecciona--</option>
+                            <option value="">Cedula de ciudadania</option>
+                            <option value="">Cedula de extranjeria</option>
+                            <option value="">Pasaporte</option>
+                            <option value="">DNI</option>
+                        </select>
+                    </div>
+                    <div class="campo-biblio">
+                        <label for="editorial">Nª de indetificacion</label>
+                        <input type="text" name="editorial" id="editorial">
+                    </div>
                 </div>
-                <div class="info-candidato">
-                    <h2>Nombre candidato</h2>
+
+                <div class="divicion-biblio">
+                    <div class="campo-biblio">
+                        <label for="name">Nombres</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="campo-biblio">
+                        <label for="lastname">Apellidos</label>
+                        <input type="text" name="lastname" id="lastname">
+                    </div>
                 </div>
-            </div>
-            <div class="campo-voto">
-                <div class="imagen-candidato">
-                    <img src="" alt="Candidato-3">
+
+                <div class="divicion-biblio">
+                    <div class="campo-biblio">
+                        <label for="phne">Telefono</label>
+                        <input type="tel" name="phne" id="phne">
+                    </div>
+                    <div class="campo-biblio">
+                        <label for="email">Correo electronico</label>
+                        <input type="email" name="email" id="email">
+                    </div>
                 </div>
-                <div class="info-candidato">
-                    <h2>Nombre candidato</h2>
+
+                <div class="divicion-biblio">
+                    <div class="campo-biblio">
+                        <label for="direccion">Direccion</label>
+                        <input type="text" name="direccion" id="direccion">
+                    </div>
+                    <div class="campo-biblio">
+                        <label for="nacionalidad">Nacionalidad</label>
+                        <input type="text" name="nacionalidad" id="nacionalidad">
+                    </div>
                 </div>
-            </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos de reserva</legend>
+
+                <div class="divicion-biblio">
+                    <div class="campo-biblio">
+                        <label for="date">Fecha de entrada</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div class="campo-biblio">
+                        <label for="date">Fecha de salida</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                </div>
+            </fieldset>
+
+
+        </form>
+
+        <div class="cont-botones">
+
+            <a href="#" class="btn btn-registrar">Registar</a>
+
+            <a href="#" class="btn btn-cancelar" >Cancelar</a>
+
         </div>
 
-        <div class="contenedor-botones">
-            <div class="btn">
-                <a href="#">Votar</a>
-            </div>
-            <div class="btn">
-                <a href="#">Cancelar</a>
-            </div>
-        </div>
-    </main>
+     </main>
     
     <footer class="site-footer">
         <div class="container">
