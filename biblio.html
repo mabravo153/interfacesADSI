@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Biblioteca</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="formulario-biblio">
+     <header class="header">
+         <div class="btn btn-header">
+             <a href="index.html">Volver</a>
+         </div>
+         
+     </header>
+
+     <main class="container main-biblio">
+
+        <h1 class="centrar-texto encabezado-biblio">Registro de libro</h1>
+
+        <form action="" class="form-biblio">
+
+            <div class="campo-biblio">
+                <label for="title">Titulo</label>
+                <input type="text" name="title" id="title">
+            </div>
+
+            <div class="campo-biblio">
+                <label for="author">Autor</label>
+                <input type="text" name="author" id="author">
+            </div>
+
+            <div class="campo-biblio">
+                <label for="isbn">ISBN</label>
+                <input type="text" name="isbn" id="isbn">
+            </div>
+
+            <div class="divicion-biblio">
+                <div class="campo-biblio">
+                    <label for="editorial">Editorial</label>
+                    <input type="text" name="editorial" id="editorial">
+                </div>
+                <div class="campo-biblio">
+                    <label for="category">Categoria</label>
+                    <select name="categoria" id="category">
+                        <option value="" disabled selected>--Selecciona--</option>
+                        <option value="">Terror</option>
+                        <option value="">Aventura</option>
+                    </select>
+                </div>
+            </div>
+            <div class="divicion-biblio">
+                <div class="campo-biblio">
+                    <label for="date">Fecha de publicacion</label>
+                    <input type="date" name="date" id="date">
+                </div>
+                <div class="campo-biblio">
+                    <label for="pag">Cantidad de paginas</label>
+                    <input type="text" name="pag" id="pag">
+                </div>
+            </div>
+
+        </form>
+
+        <div class="cont-botones">
+
+            <a href="#" class="btn btn-registrar">Registar</a>
+
+            <a href="#" class="btn btn-cancelar" >Cancelar</a>
+
+        </div>
+
+     </main>
+    
+    <footer class="site-footer">
+        <div class="container">
+            <p class="parrafo-footer">web site developed by mabravo153 &copy;</p>
+        </div>
+    </footer>
+</body>
+</html>

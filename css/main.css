@@ -1,0 +1,324 @@
+:root{
+
+  /*fuentes*/
+  --fuentePrincipal: 'Nunito Sans', sans-serif;
+  --fuenteSecundaria: 'Karla', sans-serif;
+  --fuenteFooter: 'Pacifico', cursive;
+
+
+  /*colores*/
+  --colorfondoindex: #F2F2F2;
+  --colorEncabezadoIndex: #75AABF;
+  --colorBotonIndex: #75AABF;
+  --colorHoverIndex:#467188;
+  --botonvotar: #65D759;
+  --botonCancelar:#F00431;
+
+  --fondobibloteca:#acf2de;
+  --contenidoBiblio: #d5f2e2;
+  --encabezadoBiblioteca: #033859;
+  --botonregistrar: #1f818c;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*equipararla con los rem */
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+
+
+
+/*globales*/ 
+.container{
+  margin: 0 auto;
+  max-width: 120rem;
+  width: 90%;
+}
+
+.centrar-texto{
+  text-align: center;
+}
+
+.contenedor-total{
+  height: 100vh;
+}
+
+h1{
+  margin: 0;
+}
+
+p{
+  font-size: 1.4rem;
+  margin : 0;
+}
+
+img{
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.btn{
+  padding: 1rem 3rem;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-header{
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  font-family: var(--fuenteSecundaria);
+  border: 0.1rem solid var(--colorfondoindex);
+}
+
+.btn-header a{
+  font-size: 1.9rem;
+  color: var(--colorEncabezadoIndex);
+}
+
+.header{
+  position: relative;
+  padding: 2rem 0;
+}
+
+.parrafo-footer{
+  font-family: var(--fuenteFooter);
+}
+
+/*INDEX*/
+
+body{
+  background-color: var(--colorfondoindex);
+}
+
+.total{
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.seccion-principal{
+  margin: 2rem 0;
+}
+
+
+.menu-navegacion{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem;
+  margin-top: 2rem;
+}
+
+.campo-btn{
+  text-align: center;
+}
+
+.btn-index{
+  text-align: center;
+  border: 0.1rem solid var(--colorHoverIndex);
+  border-radius: 1rem;
+  transition: all .2s ease-in-out ;
+}
+
+.btn-index:hover{
+  background-color: var(--colorHoverIndex) ;
+}
+
+.site-footer{
+  padding: 2rem 0;
+}
+
+.encabezado{
+  font-family: var(--fuentePrincipal);
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+
+.btn-index{
+  font-family: var(--fuenteSecundaria);
+  font-size: 1.6rem;
+  color: var(--colorHoverIndex);
+}
+
+.body-index a:hover{
+  color:var(--colorfondoindex)
+}
+
+/*VOTACIONES*/ 
+
+
+.contenedor-votos{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+}
+
+.info-candidato{
+  text-align: center;
+}
+
+.main-votos{
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contenedor-botones{
+  margin-top: 5.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-botones .btn{
+  margin:2rem;
+}
+
+.imagen-candidato{
+  max-height: 30rem;
+  max-width: 30rem;
+}
+
+.contenedor-imagen{
+  text-align: center;
+}
+
+.voto-blanco{
+  padding-top: 7.5rem;
+}
+
+.nombre-candidato{
+  font-family: var(--fuenteSecundaria);
+}
+
+.btn-votar{
+  font-family: var(--fuenteSecundaria);
+  font-size: 2.5rem;
+  border: 0.1rem solid var(--botonvotar);
+  color: var(--botonvotar);
+  transition: all .2s ease-in-out;
+}
+
+.btn-votar:hover{
+  color: var(--colorfondoindex);
+  background-color: var(--botonvotar);
+}
+
+.btn-cancelar{
+  font-family: var(--fuenteSecundaria);
+  font-size: 2.5rem;
+  border: 0.1rem solid var(--botonCancelar);
+  color: var(--botonCancelar);
+  transition: all .2s ease-in-out;
+}
+
+.btn-cancelar:hover{
+  color: var(--colorfondoindex);
+  background-color: var(--botonCancelar);
+}
+
+.campo-voto{
+  transition: all .2s ease-in-out;
+}
+
+.campo-voto:hover{
+  -webkit-transform: scale(1.1);
+}
+
+.escalado{
+  -webkit-transform: scale(1.1);
+}
+
+/*BIBLIOTECA*/
+
+.formulario-biblio{
+  background-color: var(--fondobibloteca);
+}
+
+.btn-registrar{
+  font-family: var(--fuenteSecundaria);
+  font-size: 2.5rem;
+  border: 0.1rem solid var(--botonregistrar);
+  color: var(--botonregistrar);
+  transition: all .2s ease-in-out;
+}
+
+.btn-registrar:hover{
+  color: var(--colorfondoindex);
+  background-color: var(--botonregistrar);
+}
+
+.encabezado-biblio{
+  font-family: var(--fuentePrincipal);
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  color: var(--encabezadoBiblioteca);
+}
+
+.main-biblio{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.campo-biblio{
+  margin: 1.5rem 0;
+  display:grid;
+  row-gap: 0.5rem;
+}
+
+.form-biblio{
+  background-color: var(--contenidoBiblio);
+  margin-top: 2rem;
+  padding: 3rem ;
+}
+
+input[type=text],input[type=date] {
+  width: 100%;
+  border: 0.2rem solid var(--contenidoBiblio);
+  padding:0.7rem;
+  font-size: 1.4rem;
+  font-family: var(--fuenteSecundaria);
+}
+
+input[type=text]:focus,input[type=date]:focus{
+  border: 0.2rem solid var(--fondobibloteca)
+}
+
+select{
+  border: none;
+  padding:0.7rem;
+  font-size: 1.4rem;
+  font-family: var(--fuenteSecundaria);
+}
+
+label{
+  font-family: var(--fuenteSecundaria);
+  font-size: 1.8rem;
+}
+
+.divicion-biblio{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+}
+
+.cont-botones{
+  text-align: center;
+  margin: 3rem 0;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+}
